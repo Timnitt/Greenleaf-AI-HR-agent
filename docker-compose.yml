@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: greenleaf_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: greenleaf
+      POSTGRES_PASSWORD: greenleaf_dev
+      POSTGRES_DB: greenleaf_agent
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  postgres_data:
