@@ -1,0 +1,67 @@
+# 1. OUR STORY: THE LEGACY
+
+It all started in 1974. Hans Egli bought a single Mercedes-Benz LPS 1632 truck in Basel. He called his newly created company GreenLeaf - turning over a new leaf in his life, full of hope. He believed that the secret to logistics wasn't just moving boxes, but moving trust. By 1985, we had ten trucks. By 1998, we were the first in the region to use a digital warehouse management system (which occupied an entire room!). Today, we represent the bridge between Swiss precision and global reach. Hans always said, "A clean truck is a happy truck," a motto we still hold dear at our Basel headquarters.
+
+# 2. OFFICE ETIQUETTE & COMMUNAL SPACES
+
+A professional environment starts with a clean desk.
+
+- The Kitchen: This is a shared space. Please label all items in the fridge with your name and the date. Items without labels will be discarded every Friday at 16:00.
+- The Microwave: Covers must be used to prevent splattering. If an explosion occurs, it is the user's responsibility to clean it immediately.
+- Office Plants: Do not water the office plants. We have a professional contractor, "GreenServices," who handles all flora maintenance on the first Tuesday of every month.
+
+# 3. WORKING HOURS & ATTENDANCE
+
+GreenLeaf operates on a trust-based flextime model.
+
+- Standard Hours: Our core office hours are 08:30 to 17:30 with a mandatory 45-minute lunch break.
+- The Exceptions: For the Customer Support team, refer to the shift rotation schedule in the IT shared folder (Appendix G).
+- Warehouse Staff: Due to loading bay regulations, warehouse staff in the Basel-Stadt location must be onsite by 07:00.
+
+# 4. TIME OFF (VACATION & HOLIDAYS)
+
+We believe in rest.
+
+- Allowance: All full-time employees are entitled to 25 days of paid annual leave per calendar year.
+- Seniority Bonus: Employees over the age of 50 are entitled to an additional 5 days. This bonus is a flat addition and is NOT pro-rated for part-time employees. For part-time employees, calculate entitlement as: (25 days x work percentage) + 5 seniority days. Example: 60% part-time over 50 = (25 x 0.60) + 5 = 20 days.
+- Swiss Public Holidays: We observe all national Swiss holidays. Since our main hub is in Basel-Stadt, applicable holidays are always determined by the Basel-Stadt work location, regardless of where employees reside.
+- Request Process: All vacation requests must be submitted via the HR portal at least 3 weeks in advance. Beat Mueller handles final approvals.
+
+# 5. BEREAVEMENT & SPECIAL LEAVE
+
+In times of personal tragedy, GreenLeaf stands by its family.
+
+- Immediate Family: Employees are granted 3 days of paid leave for the death of a spouse, child, or parent.
+- Close Relatives: For grandparents or siblings, 1 day of paid leave is granted.
+- Approval: Any request exceeding 3 days requires a personal meeting and written approval from the CEO.
+
+# 6. IT, SECURITY & CONNECTIVITY
+
+- Passwords: Passwords must be changed every 90 days. Never write your password on a post-it note.
+- Wi-Fi Access:
+  - Internal: Staff devices must be registered via MAC address with the IT department.
+  - Guest: For visitors, the password is [REDACTED — contact IT]. This is rotated annually.
+- Hardware: Laptops are company property. If you spill coffee on your device, do not attempt to dry it with a hairdryer. Bring it directly to the IT desk.
+
+# 7. EXPENSES & TRAVEL
+
+- Client Lunches: Only reimbursable if at least one external client is present.
+- Limits: Maximum 35 CHF per person. Alcohol is strictly non-reimbursable and must be paid for on a separate personal receipt.
+- Submission: All receipts must be scanned using the "ScanPro" app. We no longer accept physical paper receipts or photos of crumpled paper.
+
+# 8. SAFETY & EMERGENCY PROCEDURES
+
+- Fire Alarms: In the event of a siren, exit via the nearest stairwell. Do not use the elevators.
+- Elevator Emergency: If you are trapped inside an elevator, do NOT attempt to force the doors open. Press and hold the alarm button inside the elevator. Use your mobile phone to call the emergency number posted inside the elevator or dial 112. Stay calm and wait for the rescue team. Do not attempt to climb out of a stopped elevator.
+- Fire Wardens (Updated 2019):
+  - Floor 1: Thomas Bucher
+  - Floor 2: Ursula Vonolten
+  - Floor 3: Kevin Koller
+- Assembly Point: The gravel parking lot behind the main warehouse.
+
+# 9. SENSITIVE MATTERS & CONDUCT
+
+GreenLeaf is committed to a safe workplace.
+
+- Conflict Resolution: If you have a dispute with a colleague, first attempt a "Coffee Chat" to resolve it.
+- Serious Misconduct: For matters of harassment, bullying, or whistleblowing, GreenLeaf utilizes an external, confidential ombudsman to ensure total anonymity and safety. Do not discuss these matters with the internal bot or via public Slack channels. Contact: ombudsman@greenleaf-safety.ch.
