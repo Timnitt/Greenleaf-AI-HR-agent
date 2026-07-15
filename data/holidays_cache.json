@@ -1,0 +1,75 @@
+{
+  "year": 2026,
+  "data": [
+    {
+      "date": "2026-01-01",
+      "name": "New Year's Day",
+      "type": "National",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    },
+    {
+      "date": "2026-04-03",
+      "name": "Good Friday",
+      "type": "Cantonal",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    },
+    {
+      "date": "2026-04-06",
+      "name": "Easter Monday",
+      "type": "Cantonal",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    },
+    {
+      "date": "2026-05-01",
+      "name": "Labour Day",
+      "type": "Cantonal",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Ascension Day",
+      "type": "National",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    },
+    {
+      "date": "2026-05-25",
+      "name": "Pentecost Monday",
+      "type": "Cantonal",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    },
+    {
+      "date": "2026-08-01",
+      "name": "Independence Day",
+      "type": "National",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    },
+    {
+      "date": "2026-09-20",
+      "name": "Federal Day of Thanksgiving, Repentance and Prayer",
+      "type": "Cantonal",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    },
+    {
+      "date": "2026-12-25",
+      "name": "Christmas",
+      "type": "National",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    },
+    {
+      "date": "2026-12-26",
+      "name": "St Stephen's Day",
+      "type": "Cantonal",
+      "region": "CH-BS",
+      "source": "OpenHolidays API"
+    }
+  ]
+}
