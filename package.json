@@ -7,7 +7,9 @@
   },
   "scripts": {
     "dev": "tsx src/main.ts",
-    "dev:cli": "tsx src/main.ts --cli",
+    "dev:web": "tsx src/main.ts --web",
+    "build": "tsc",
+    "start": "node dist/src/main.js",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
