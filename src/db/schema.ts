@@ -1,7 +1,11 @@
 import {
-  pgTable, serial, text, timestamp, index, vector
+  pgTable, serial, text, timestamp, vector
 } from 'drizzle-orm/pg-core';
 
+// No IVFFlat index on embedding: that ANN index only pays off at large row
+// counts (its lists partition the vectors into clusters and search only the
+// nearest one). At handbook-chunk scale — dozens of rows, not thousands — an
+// exact sequential scan is both instant and always 100% correct.
 export const handbookChunks = pgTable('handbook_chunks', {
   id:           serial('id').primaryKey(),
   content:      text('content').notNull(),
@@ -9,9 +13,7 @@ export const handbookChunks = pgTable('handbook_chunks', {
   sectionTitle: text('section_title').notNull(),
   embedding:    vector('embedding', { dimensions: 768 }),
   createdAt:    timestamp('created_at').defaultNow()
-}, (table) => ({
-  embeddingIdx: index('handbook_chunks_embedding_idx').on(table.embedding)
-}));
+});
 
 export const sessions = pgTable('sessions', {
   id:        text('id').primaryKey(),

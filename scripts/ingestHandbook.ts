@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { readFileSync } from 'fs';
 import { embed } from 'ai';
-import { embeddingModel } from '../src/agent/provider.js';
+import { documentEmbeddingModel } from '../src/agent/provider.js';
 import { db, testConnection } from '../src/db/client.js';
 import { handbookChunks } from '../src/db/schema.js';
 import { sql } from 'drizzle-orm';
@@ -68,7 +68,7 @@ async function main(): Promise<void> {
 
   for (const [i, chunk] of chunks.entries()) {
     const { embedding } = await embed({
-      model: embeddingModel,
+      model: documentEmbeddingModel,
       value: chunk.content
     });
 

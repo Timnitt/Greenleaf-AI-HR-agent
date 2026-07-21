@@ -12,6 +12,13 @@ const SYSTEM_PROMPT = readFileSync('./logic/system_prompt.txt', 'utf-8');
 
 const OMBUDSMAN_TOPICS = /\b(harass|bully|bullying|mobbing|whistleblow)/i;
 
+// The model has no built-in notion of "today" — without this, it guesses a
+// year when resolving dates like "May 1st", which breaks holiday lookups.
+function buildSystemPrompt(): string {
+  const today = new Date().toISOString().slice(0, 10);
+  return `${SYSTEM_PROMPT}\n\nToday's date is ${today} (YYYY-MM-DD). Resolve relative or partial dates (e.g. "May 1st", "today", "next Monday") against this date before calling a tool.`;
+}
+
 export async function handleMessage(
   rawInput: string,
   sessionId: string
@@ -44,7 +51,7 @@ export async function handleMessage(
     // LLM with tools
     const { text, steps } = await generateText({
       model: google(process.env.GEMINI_MODEL ?? 'gemini-2.5-flash'),
-      system: SYSTEM_PROMPT,
+      system: buildSystemPrompt(),
       messages: [
         ...history,
         { role: 'user', content: security.maskedText }

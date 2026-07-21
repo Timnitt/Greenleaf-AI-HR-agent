@@ -1,5 +1,5 @@
 import { embed } from 'ai';
-import { embeddingModel } from './provider.js';
+import { queryEmbeddingModel } from './provider.js';
 import { db } from '../db/client.js';
 import { sql } from 'drizzle-orm';
 import type { RagResult, HandbookChunk } from '../types.js';
@@ -11,13 +11,14 @@ export async function queryHandbook(
   question: string
 ): Promise<RagResult | { escalate: true; reason: string }> {
 
-  // Embed the question with the SAME model used at ingestion
+  // Embed the question with the query-optimized task type — must stay in the
+  // SAME 768-dim space as documentEmbeddingModel, just tuned for searching
   const { embedding } = await embed({
-    model: embeddingModel,
+    model: queryEmbeddingModel,
     value: question
   });
 
-  // Vector similarity search via pgvector (<=> is cosine distance)
+  // Vector similarity search via pgvector
   const vectorStr = `[${embedding.join(',')}]`;
   const result = await db.execute(sql`
     SELECT
@@ -32,6 +33,12 @@ export async function queryHandbook(
   `);
 
   const chunks = result.rows as unknown as Array<HandbookChunk & { similarity: number }>;
+
+  console.log(
+    `[RAG] "${question}" → ` +
+    chunks.map(c => `Sec.${c.sectionNum}:${c.similarity.toFixed(3)}`).join(', ') +
+    ` (threshold ${CONFIDENCE_THRESHOLD})`
+  );
 
   // 3. Confidence gate — below threshold means "don't let the LLM guess"
   if (!chunks.length || (chunks[0]?.similarity ?? 0) < CONFIDENCE_THRESHOLD) {

@@ -11,11 +11,10 @@ CREATE TABLE IF NOT EXISTS handbook_chunks (
   created_at  TIMESTAMP DEFAULT NOW()
 );
 
--- Vector similarity search index
-CREATE INDEX IF NOT EXISTS handbook_chunks_embedding_idx
-  ON handbook_chunks
-  USING ivfflat (embedding vector_cosine_ops)
-  WITH (lists = 100);
+-- No IVFFlat index on embedding: at handbook-chunk scale (dozens of rows,
+-- not thousands+) an exact sequential scan is instant and always 100%
+-- correct — an approximate index with lists sized for a much bigger
+-- dataset was returning incomplete, near-random results.
 
 -- Conversation sessions
 CREATE TABLE IF NOT EXISTS sessions (
